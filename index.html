@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #father{
+            width: 310px;
+            height: 300px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .bloco{
+            width: 100px;
+            height: 100px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+        }
+        .bloco:hover{
+            transform: scale(1.1);
+            transition: 2ms;
+            cursor: pointer;
+            background-color: rgba(92, 85, 85, 0.39);
+        }
+        #dvmenu{
+            margin: 0;
+           padding: 0;
+        }
+        #dvQuemComeca{
+            color: black;
+            font-size: 20px;
+            margin: 0;
+            height: 50px;
+        }
+        #dvmenu button{
+            margin: 0;
+            padding: 0;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="dvmenu">
+        <div id="dvQuemComeca">Quem joga</div>
+        
+        <button onclick="inicia()">Iniciar o game</button>
+    </div>
+    <div id="father">
+        <div id="p1" class="bloco" style="border-right: 1px solid black;border-bottom: 1px solid"  onclick="jogar(1)"></div>
+        <div id="p2" class="bloco"  onclick="jogar(2)"></div>
+        <div id="p3" class="bloco" style="border-left: 1px solid black;border-bottom: 1px solid "  onclick="jogar(3)"></div>
+        <div id="p4" class="bloco"  onclick="jogar(4)"></div>
+        <div id="p5" class="bloco" style="border: 1px solid black;" onclick="jogar(5)"></div>
+        <div id="p6" class="bloco" onclick="jogar(6)"></div>
+        <div id="p7" class="bloco"style="border-right: 1px solid black;border-top: 1px solid black;" onclick="jogar(7)"></div>
+        <div id="p8" class="bloco"  onclick="jogar(8)"></div>
+        <div id="p9" class="bloco" style="border-left: 1px solid black;border-top: 1px solid black" onclick="jogar(9)"></div>
+    </div>
+
+    
+</body>
+
+    <script src="index.js"></script>
+
+</html>
